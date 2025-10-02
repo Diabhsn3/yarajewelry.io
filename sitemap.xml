@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- English homepage -->
+  <!-- English -->
   <url>
     <loc>https://www.minikinyon-yara.com/?lang=en</loc>
     <lastmod>2025-10-02</lastmod>
@@ -12,7 +12,7 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://www.minikinyon-yara.com/?lang=he"/>
   </url>
 
-  <!-- Arabic homepage -->
+  <!-- Arabic -->
   <url>
     <loc>https://www.minikinyon-yara.com/?lang=ar</loc>
     <lastmod>2025-10-02</lastmod>
@@ -22,7 +22,7 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://www.minikinyon-yara.com/?lang=he"/>
   </url>
 
-  <!-- Hebrew homepage -->
+  <!-- Hebrew -->
   <url>
     <loc>https://www.minikinyon-yara.com/?lang=he</loc>
     <lastmod>2025-10-02</lastmod>
