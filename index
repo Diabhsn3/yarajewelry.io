@@ -8,37 +8,7 @@
   <meta name="theme-color" content="#d4af37" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--gold:#d4af37;--dark:#1a1a1a;--light:#fff8f0;--muted:#6b7280}
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;height:100%}
-    body{font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--light);color:#222}
-    a{color:var(--gold);text-decoration:none}
-    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:50}
-    .container{max-width:1100px;margin:0 auto;padding:0 16px}
-    .topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:10px}
-    .logo{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#f7e7b9, var(--gold));display:grid;place-items:center;color:#fff;font-weight:700}
-    nav.lang{display:flex;gap:6px;flex-wrap:wrap}
-    .lang button{border:1px solid #e5e7eb;background:#fff;color:#111;padding:6px 10px;border-radius:999px;cursor:pointer}
-    .lang button.active{background:var(--gold);color:#111;border-color:var(--gold);font-weight:700}
-    .hero{padding:42px 0 24px;display:grid;gap:10px;text-align:center}
-    .hero h1{font-size:34px;margin:0}
-    .hero p{margin:0;color:var(--muted)}
-    .cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:10px}
-    .btn{padding:10px 14px;border-radius:12px;border:1px solid #e5e7eb;cursor:pointer}
-    .btn.primary{background:var(--gold);border-color:var(--gold)}
-    .grid{display:grid;gap:16px}
-    @media (min-width:768px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
-    section{padding:28px 0;border-top:1px solid #f0f0f0}
-    .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:16px;box-shadow:0 12px 30px rgba(0,0,0,.04)}
-    h2{margin:0 0 12px 0;font-size:24px}
-    ul{margin:0;padding-inline-start:18px}
-    footer{padding:24px 0;background:#111;color:#eee;margin-top:28px}
-    .row{display:flex;gap:12px;flex-wrap:wrap}
-    .pill{border:1px dashed #e5e7eb;padding:6px 10px;border-radius:999px}
-    .muted{color:var(--muted)}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
