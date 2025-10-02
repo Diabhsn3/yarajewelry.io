@@ -75,7 +75,9 @@ header {
   background: linear-gradient(135deg, var(--gold-2), var(--gold));
   display: grid; place-items: center; color: #fff; font-weight: 700;
   box-shadow: var(--shadow);
+  overflow: hidden;
 }
+.logo img { inline-size: 100%; block-size: 100%; object-fit: contain; border-radius: inherit; }
 
 /* Language nav */
 nav.lang { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -165,3 +167,5 @@ body { text-align: start; }
   section { border: none; padding-block: 12px; }
   .card { box-shadow: none; }
 }
+
+
