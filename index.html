@@ -6,6 +6,62 @@
   <title>Yara Jewelry</title>
   <meta name="description" content="Yara Jewelry – Gold 14K & 21K, silver, diamonds, watches, and custom gifts. Tamra, serving Haifa & the Galilee." />
   <meta name="theme-color" content="#c9a227" />
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.minikinyon-yara.com/">
+
+  <!-- Basic SEO -->
+  <title id="seo-title">Yara Jewelry | Gold, Diamonds, Silver & Watches – Tamra, Haifa & Galilee</title>
+  <meta name="description" id="seo-description" content="Yara Jewelry offers 14K & 21K gold (no 18K), silver, diamonds, watches, and custom gifts. Located in Tamra, serving Haifa & the Galilee. WhatsApp orders welcome.">
+  <meta name="author" content="Yara Jewelry">
+
+  <!-- Hreflang (3 languages via query flag) -->
+  <link rel="alternate" href="https://www.minikinyon-yara.com/?lang=en" hreflang="en">
+  <link rel="alternate" href="https://www.minikinyon-yara.com/?lang=ar" hreflang="ar">
+  <link rel="alternate" href="https://www.minikinyon-yara.com/?lang=he" hreflang="he">
+  <link rel="alternate" href="https://www.minikinyon-yara.com/" hreflang="x-default">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" id="og-title" content="Yara Jewelry – Tamra | Gold, Silver, Diamonds & Watches">
+  <meta property="og:description" id="og-description" content="Gold 14K & 21K, silver, diamonds, luxury watches, and custom gifts in Tamra. Serving Haifa & the Galilee.">
+  <meta property="og:url" content="https://www.minikinyon-yara.com/">
+  <meta property="og:image" content="https://www.minikinyon-yara.com/og-preview.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="twitter-title" content="Yara Jewelry – Tamra | Gold, Silver & Diamonds">
+  <meta name="twitter:description" id="twitter-description" content="Fine jewelry & gifts for Haifa and the Galilee.">
+  <meta name="twitter:image" content="https://www.minikinyon-yara.com/og-preview.jpg">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JewelryStore",
+    "name": "Yara Jewelry",
+    "url": "https://www.minikinyon-yara.com/",
+    "image": "https://www.minikinyon-yara.com/og-preview.jpg",
+    "telephone": "+972-52-295-7009",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tamra",
+      "addressLocality": "Tamra",
+      "addressRegion": "Haifa District",
+      "postalCode": "3081100",
+      "addressCountry": "IL"
+    },
+    "areaServed": ["Tamra","Haifa","Galilee"],
+    "sameAs": ["https://instagram.com/YaraJewelry21"],
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"20:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"10:00","closes":"16:00"}
+    ],
+    "priceRange": "₪₪",
+    "currenciesAccepted": "ILS",
+    "paymentAccepted": "Cash, Credit Card"
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -30,7 +86,7 @@
 
   <main class="container">
     <section class="hero">
-      <h1 data-i18n="hero_title">✨ Yara Jewelry ✨</h1>
+      <h1 data-i18n="seo_main_title">Jewelry Store in Tamra – Serving Haifa & the Galilee</h1>
       <p class="hero-subtitle" data-i18n="hero_subtitle">(mini knyion yara)</p>
       <p data-i18n="hero_sub">Fine gold (14K & 21K), silver, diamonds & luxury watches in Tamra, serving Haifa & the Galilee.</p>
       <p class="hero-manager" data-i18n="hero_manager">Managed by ahmad jmal diab (waree)</p>
@@ -75,7 +131,9 @@
     <section id="collections">
       <div class="card">
         <h2 data-i18n="collections_title">Our Collections</h2>
-        <div class="grid cols-3" style="margin-top:10px">
+        
+        <h2 data-i18n="seo_gold_title">Gold Jewelry 14K & 21K</h2>
+        <div class="grid cols-2" style="margin-top:10px">
           <div class="card">
             <strong data-i18n="col_gold">Gold Jewelry (14K & 21K)</strong>
             <p class="muted" data-i18n="col_gold_txt">Necklaces, bracelets, rings & custom pieces.</p>
@@ -84,6 +142,10 @@
             <strong data-i18n="col_silver">Silver & Diamonds</strong>
             <p class="muted" data-i18n="col_silver_txt">Sterling silver, diamond rings & pendants.</p>
           </div>
+        </div>
+        
+        <h2 data-i18n="seo_silver_title">Silver & Diamond Jewelry</h2>
+        <div class="grid cols-2" style="margin-top:10px">
           <div class="card">
             <strong data-i18n="col_watches">Watches</strong>
             <p class="muted" data-i18n="col_watches_txt">Luxury & fashion watches with sizing service.</p>
@@ -93,6 +155,9 @@
             <p class="muted" data-i18n="col_fragrance_txt">Premium perfumes and gift-ready sets.</p>
           </div>
         </div>
+        
+        <h2 data-i18n="seo_watches_title">Luxury Watches</h2>
+        <p class="muted" style="text-align:center;margin-top:10px" data-i18n="seo_watches_desc">Premium Swiss and international watch brands with professional sizing and maintenance services.</p>
       </div>
     </section>
 
@@ -182,6 +247,13 @@
         rado_text: "Discover Swiss-made Rado watches at Yara – exclusive models, warranty and service.",
         tagline: "Gold • Silver • Diamonds • Watches • Gifts",
         brand_name: "Yara Jewelry (mini knyion yara)",
+        seo_main_title: "Jewelry Store in Tamra – Serving Haifa & the Galilee",
+        seo_title: "Yara Jewelry | Gold, Diamonds, Silver & Watches – Tamra, Haifa & Galilee",
+        seo_description: "Yara Jewelry offers 14K & 21K gold (no 18K), silver, diamonds, watches, and custom gifts. Located in Tamra, serving Haifa & the Galilee. WhatsApp orders welcome.",
+        og_title: "Yara Jewelry – Tamra | Gold, Silver, Diamonds & Watches",
+        og_description: "Gold 14K & 21K, silver, diamonds, luxury watches, and custom gifts in Tamra. Serving Haifa & the Galilee.",
+        twitter_title: "Yara Jewelry – Tamra | Gold, Silver & Diamonds",
+        twitter_description: "Fine jewelry & gifts for Haifa and the Galilee.",
         hero_title: "✨ Yara Jewelry ✨",
         hero_subtitle: "(mini knyion yara)",
         hero_sub: "Fine gold (14K & 21K), silver, diamonds & luxury watches in Tamra. The biggest store in the Haifa & Galilee area, greeting customers from all around the country.",
@@ -204,6 +276,10 @@
         hours_fri: "Fri: 15:00–20:00",
         hours_sat: "Sat: 12:00–20:00",
         collections_title: "Our Collections",
+        seo_gold_title: "Gold Jewelry 14K & 21K",
+        seo_silver_title: "Silver & Diamond Jewelry",
+        seo_watches_title: "Luxury Watches",
+        seo_watches_desc: "Premium Swiss and international watch brands with professional sizing and maintenance services.",
         col_gold: "Gold Jewelry (14K & 21K)",
         col_gold_txt: "Necklaces, bracelets, rings & custom pieces.",
         col_silver: "Silver & Diamonds",
@@ -235,6 +311,13 @@
         rado_text: "اكتشف ساعات رادو السويسرية في يارا – موديلات حصرية، كفالة وخدمة.",
         tagline: "ذهب • فضة • ألماس • ساعات • هدايا",
         brand_name: "مجوهرات يارا (ميني كنيون يارا)",
+        seo_main_title: "متجر مجوهرات في طمرة – نخدم حيفا والجليل",
+        seo_title: "مجوهرات يارا | ذهب، ألماس، فضة وساعات – طمرة، حيفا والجليل",
+        seo_description: "مجوهرات يارا تقدم ذهب عيار 14 و21، فضة، ألماس، ساعات وهدايا مخصصة. في طمرة، نخدم حيفا والجليل. طلبات واتساب مرحب بها.",
+        og_title: "مجوهرات يارا – طمرة | ذهب، فضة، ألماس وساعات",
+        og_description: "ذهب عيار 14 و21، فضة، ألماس، ساعات فاخرة وهدايا مخصصة في طمرة. نخدم حيفا والجليل.",
+        twitter_title: "مجوهرات يارا – طمرة | ذهب، فضة وألماس",
+        twitter_description: "مجوهرات فاخرة وهدايا لحيفا والجليل.",
         hero_title: "✨ مجوهرات يارا ✨",
         hero_subtitle: "(ميني كنيون يارا)",
         hero_sub: "ذهب فاخر (عيار 14 و21)، فضة، ألماس وساعات فاخرة في طمرة. أكبر متجر في منطقة حيفا والجليل، نرحب بالعملاء من جميع أنحاء البلاد.",
@@ -257,6 +340,10 @@
         hours_fri: "الجمعة: 15:00–20:00",
         hours_sat: "السبت: 12:00–20:00",
         collections_title: "مجموعاتنا",
+        seo_gold_title: "مجوهرات ذهب عيار 14 و21",
+        seo_silver_title: "مجوهرات فضة وألماس",
+        seo_watches_title: "ساعات فاخرة",
+        seo_watches_desc: "ماركات ساعات سويسرية ودولية فاخرة مع خدمات تعديل المقاس والصيانة المهنية.",
         col_gold: "مجوهرات ذهب (14 و21)",
         col_gold_txt: "سلاسل، أساور، خواتم وتصاميم خاصة.",
         col_silver: "فضة وألماس",
@@ -288,6 +375,13 @@
         rado_text: "גלו שעוני Rado שוויצריים ביארא – דגמים בלעדיים, אחריות ושירות.",
         tagline: "זהב • כסף • יהלומים • שעונים • מתנות",
         brand_name: "תכשיטי יארא (מיני קניון יארא)",
+        seo_main_title: "חנות תכשיטים בטמרה – משרתים את חיפה והגליל",
+        seo_title: "תכשיטי יארא | זהב, יהלומים, כסף ושעונים – טמרה, חיפה והגליל",
+        seo_description: "תכשיטי יארא מציעים זהב 14K ו-21K, כסף, יהלומים, שעונים ומתנות מותאמות אישית. בטמרה, משרתים את חיפה והגליל. הזמנות WhatsApp מתקבלות בברכה.",
+        og_title: "תכשיטי יארא – טמרה | זהב, כסף, יהלומים ושעונים",
+        og_description: "זהב 14K ו-21K, כסף, יהלומים, שעונים יוקרתיים ומתנות מותאמות אישית בטמרה. משרתים את חיפה והגליל.",
+        twitter_title: "תכשיטי יארא – טמרה | זהב, כסף ויהלומים",
+        twitter_description: "תכשיטים יוקרתיים ומתנות לחיפה והגליל.",
         hero_title: "✨ תכשיטי יארא ✨",
         hero_subtitle: "(מיני קניון יארא)",
         hero_sub: "זהב משובח (14K ו‑21K), כסף, יהלומים ושעונים יוקרתיים בטמרה. החנות הגדולה ביותר באזור חיפה והגליל, מקבלים בברכה לקוחות מכל רחבי הארץ.",
@@ -310,6 +404,10 @@
         hours_fri: "ו': 15:00–20:00",
         hours_sat: "שבת: 12:00–20:00",
         collections_title: "הקולקציות שלנו",
+        seo_gold_title: "תכשיטי זהב 14K ו-21K",
+        seo_silver_title: "תכשיטי כסף ויהלומים",
+        seo_watches_title: "שעונים יוקרתיים",
+        seo_watches_desc: "מותגי שעונים שוויצריים ובינלאומיים יוקרתיים עם שירותי התאמת מידה ותחזוקה מקצועית.",
         col_gold: "תכשיטי זהב (14K ו‑21K)",
         col_gold_txt: "שרשראות, צמידים, טבעות ועיצובים לפי הזמנה.",
         col_silver: "כסף ויהלומים",
@@ -361,6 +459,27 @@
         btn.classList.toggle('active', isActive);
         btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
       });
+
+      // Update meta tags dynamically
+      if (dict.seo_title) {
+        document.getElementById('seo-title').textContent = dict.seo_title;
+        document.title = dict.seo_title;
+      }
+      if (dict.seo_description) {
+        document.getElementById('seo-description').setAttribute('content', dict.seo_description);
+      }
+      if (dict.og_title) {
+        document.getElementById('og-title').setAttribute('content', dict.og_title);
+      }
+      if (dict.og_description) {
+        document.getElementById('og-description').setAttribute('content', dict.og_description);
+      }
+      if (dict.twitter_title) {
+        document.getElementById('twitter-title').setAttribute('content', dict.twitter_title);
+      }
+      if (dict.twitter_description) {
+        document.getElementById('twitter-description').setAttribute('content', dict.twitter_description);
+      }
     }
 
     // Init language from URL hash (?lang=ar or #ar)
