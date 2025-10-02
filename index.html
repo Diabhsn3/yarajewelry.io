@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yara Jewelry</title>
   <meta name="description" content="Yara Jewelry – Gold 14K & 21K, silver, diamonds, watches, and custom gifts. Tamra, serving Haifa & the Galilee." />
-  <meta name="theme-color" content="#d4af37" />
+  <meta name="theme-color" content="#c9a227" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -14,28 +14,33 @@
   <header>
     <div class="container topbar">
       <div class="brand">
-        <div class="logo"><img src="LOGO.png" alt="Yara Jewelry logo"></div>
+        <div class="logo"><img src="LOGO.jpg" alt="Yara Jewelry logo"></div>
         <div>
           <strong>Yara Jewelry</strong><br>
           <small class="muted" data-i18n="tagline">Gold • Silver • Diamonds • Watches • Gifts</small>
         </div>
       </div>
       <nav class="lang" aria-label="Language selector">
-        <button data-lang="en" class="active" aria-pressed="true">EN</button>
-        <button data-lang="ar" aria-pressed="false">العربية</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+        <button data-lang="ar" class="active" aria-pressed="true">العربية</button>
         <button data-lang="he" aria-pressed="false">עברית</button>
       </nav>
     </div>
   </header>
 
   <main class="container">
+    <section id="store">
+      <div class="card">
+        <img class="store-photo" src="store.JPG" alt="Yara Jewelry store in Tamra" />
+      </div>
+    </section>
     <section class="hero">
       <h1 data-i18n="hero_title">✨ Yara Jewelry ✨</h1>
       <p data-i18n="hero_sub">Fine gold (14K & 21K), silver, diamonds & luxury watches in Tamra, serving Haifa & the Galilee.</p>
       <div class="cta">
         <a class="btn primary" id="whatsappBtn" href="https://wa.me/972000000000" target="_blank" rel="noopener" data-i18n="cta_whatsapp">Chat on WhatsApp</a>
         <a class="btn" href="https://instagram.com/YaraJewelry21" target="_blank" rel="noopener">Instagram</a>
-        <a class="btn" id="mapBtn" href="https://share.google/WgRKHiHM63PW4Knnx" target="_blank" rel="noopener" data-i18n="cta_map">Find us on Maps</a>
+        <a class="btn" href="https://www.tiktok.com/@yarajewelry12?_t=ZS-90D9sgogU4L&_r=1" target="_blank" rel="noopener" data-i18n="cta_tiktok">TikTok</a>
       </div>
       <div class="row" style="justify-content:center;margin-top:6px">
         <span class="pill" data-i18n="badge_gold">Gold 14K · 21K</span>
@@ -49,7 +54,9 @@
     <section id="about" class="grid cols-2">
       <div class="card">
         <h2 data-i18n="about_title">About Us</h2>
-        <p data-i18n="about_text">We are a family-run jewelry store in Tamra. We specialize in 14K & 21K gold (no 18K), fine silver, diamonds, luxury watches, and curated gifts. We also create custom gift arrangements to your taste.</p>
+        <p data-i18n="about_p1">We are a family-run jewelry store in Tamra.</p>
+        <p class="muted" data-i18n="about_p2">We offer 14K & 21K gold, plus 24K bars and ounces for investment.</p>
+        <p class="muted" data-i18n="about_p3">Also: silver, diamonds, original watches, premium gifts, chocolates and perfumes with special gift wrapping for every occasion.</p>
       </div>
       <div class="card">
         <h2 data-i18n="hours_title">Hours</h2>
@@ -77,6 +84,10 @@
             <strong data-i18n="col_watches">Watches</strong>
             <p class="muted" data-i18n="col_watches_txt">Luxury & fashion watches with sizing service.</p>
           </div>
+          <div class="card">
+            <strong data-i18n="col_fragrance">Fragrances</strong>
+            <p class="muted" data-i18n="col_fragrance_txt">Premium perfumes and gift-ready sets.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -94,10 +105,27 @@
       <div class="card">
         <h2 data-i18n="contact_title">Contact</h2>
         <p><strong data-i18n="contact_store">Yara Jewelry – Tamra</strong></p>
+        <p data-i18n="contact_manager">Managed by ahmad jmal diab (waree)</p>
         <p>📞 <a href="tel:+972525555251" id="phoneLink">052-555-5251</a></p>
         <p>📲 <a href="https://wa.me/972525555251" id="waLink" target="_blank" rel="noopener" data-i18n="contact_whatsapp">WhatsApp us</a></p>
         <p>📷 <a href="https://instagram.com/YaraJewelry21" target="_blank" rel="noopener">@YaraJewelry21</a></p>
-        <p>📍 <a href="https://share.google/WgRKHiHM63PW4Knnx" id="addrLink" target="_blank" rel="noopener" data-i18n="contact_address">Tamra, Israel (see map)</a></p>
+        <p>🎵 <a href="https://www.tiktok.com/@yarajewelry12?_t=ZS-90D9sgogU4L&_r=1" target="_blank" rel="noopener" data-i18n="contact_tiktok">TikTok</a></p>
+        <p id="addrText" data-i18n="contact_address">Tamra, Israel</p>
+      </div>
+    </section>
+
+    <section id="map" aria-label="Map">
+      <div class="card">
+        <h2 class="map-title" data-i18n="map_title">Location</h2>
+        <p class="muted" data-i18n="map_address">طمرة، ابن زيدون</p>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=32.84851,35.20426&z=16&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Yara Jewelry location in Tamra">
+          </iframe>
+        </div>
       </div>
     </section>
   </main>
@@ -126,17 +154,20 @@
         hero_sub: "Fine gold (14K & 21K), silver, diamonds & luxury watches in Tamra, serving Haifa & the Galilee.",
         cta_whatsapp: "Chat on WhatsApp",
         cta_map: "Find us on Maps",
+        cta_tiktok: "TikTok",
         badge_gold: "Gold 14K · 21K",
         badge_silver: "Sterling Silver",
         badge_diamond: "Diamonds",
         badge_watches: "Watches",
         badge_gifts: "Gifts & Chocolates",
         about_title: "About Us",
-        about_text: "We are a family-run jewelry store in Tamra. We specialize in 14K & 21K gold (no 18K), fine silver, diamonds, luxury watches, and curated gifts. We also create custom gift arrangements to your taste.",
+        about_p1: "Yara Jewelry – in the heart of Tamra.",
+        about_p2: "Not just a gold shop! 14K & 21K designs, plus 24K bars and ounces for investment.",
+        about_p3: "Also: silver, diamonds, original watches, premium gifts, chocolates and perfumes with special gift wrapping for engagements, weddings, birthdays and surprises.",
         hours_title: "Hours",
-        hours_week: "Sun–Thu: 10:00–20:00",
-        hours_fri: "Fri: 10:00–16:00",
-        hours_sat: "Sat: Closed",
+        hours_week: "Sun–Thu: 12:00–20:00",
+        hours_fri: "Fri: 15:00–20:00",
+        hours_sat: "Sat: 12:00–20:00",
         collections_title: "Our Collections",
         col_gold: "Gold Jewelry (14K & 21K)",
         col_gold_txt: "Necklaces, bracelets, rings & custom pieces.",
@@ -144,6 +175,8 @@
         col_silver_txt: "Sterling silver, diamond rings & pendants.",
         col_watches: "Watches",
         col_watches_txt: "Luxury & fashion watches with sizing service.",
+        col_fragrance: "Fragrances",
+        col_fragrance_txt: "Premium perfumes and gift-ready sets.",
         services_title: "Services",
         svc_resize: "Watch resizing & battery replacement",
         svc_clean: "Jewelry cleaning & polishing",
@@ -151,8 +184,12 @@
         svc_buy: "We buy gold by gram (ILS)",
         contact_title: "Contact",
         contact_store: "Yara Jewelry – Tamra",
+        contact_manager: "Managed by ahmad jmal diab (waree)",
         contact_whatsapp: "WhatsApp us",
-        contact_address: "Tamra, Israel (see map)",
+        contact_address: "Tamra, Israel",
+        contact_tiktok: "TikTok",
+        map_title: "Location",
+        map_address: "Tamra, Ibn Zaydun",
         foot_note: "Prices for gold are in ILS per gram and may include workmanship unless noted."
       },
       ar: {
@@ -161,17 +198,20 @@
         hero_sub: "ذهب فاخر (عيار 14 و21)، فضة، ألماس وساعات فاخرة في طمرة – نخدم حيفا والجليل.",
         cta_whatsapp: "تواصل عبر واتساب",
         cta_map: "موقعنا على الخارطة",
+        cta_tiktok: "تيك توك",
         badge_gold: "ذهب عيار 14 · 21",
         badge_silver: "فضة استرليني",
         badge_diamond: "ألماس",
         badge_watches: "ساعات",
         badge_gifts: "هدايا وشوكولاتة",
         about_title: "من نحن",
-        about_text: "نحن متجر عائلي للمجوهرات في طمرة. نختص بذهب عيار 14 و21 (لا يوجد 18)، فضة فاخرة، ألماس، ساعات فاخرة وهدايا منسقة. ونجهّز ترتيبات هدايا حسب ذوقكم.",
+        about_p1: "💎 مجوهرات يارا – في قلب طمرة",
+        about_p2: "أكثر من مجرد محل ذهب! عندنا تشكيلات عيار 14 و21 بتصاميم عصرية، بالإضافة إلى سبائك وأونصات 24 للاستثمار.",
+        about_p3: "نوفر كمان مجوهرات فضة، ألماس، ساعات أصلية، هدايا فاخرة، شوكولاتة وعطور مع خدمة تغليف مميزة تناسب جميع المناسبات: خطوبة، زواج، عيد ميلاد أو مفاجأة خاصة. نخدم الزبائن من طمرة، حيفا، والجليل لنمنحكم تجربة شراء ممتعة وخدمة شخصية بأعلى مستوى.",
         hours_title: "ساعات العمل",
-        hours_week: "الأحد–الخميس: 10:00–20:00",
-        hours_fri: "الجمعة: 10:00–16:00",
-        hours_sat: "السبت: مغلق",
+        hours_week: "الأحد–الخميس: 12:00–20:00",
+        hours_fri: "الجمعة: 15:00–20:00",
+        hours_sat: "السبت: 12:00–20:00",
         collections_title: "مجموعاتنا",
         col_gold: "مجوهرات ذهب (14 و21)",
         col_gold_txt: "سلاسل، أساور، خواتم وتصاميم خاصة.",
@@ -179,6 +219,8 @@
         col_silver_txt: "فضة استرليني، خواتم وأحجار ألماس.",
         col_watches: "ساعات",
         col_watches_txt: "ساعات فاخرة وعصرية مع خدمة تعديل المقاس.",
+        col_fragrance: "عطور",
+        col_fragrance_txt: "عطور فاخرة وتجهيزات هدايا جاهزة.",
         services_title: "خدماتنا",
         svc_resize: "تقصير/تطويل أساور الساعات وتبديل بطارية",
         svc_clean: "تنظيف وتلميع المجوهرات",
@@ -186,8 +228,12 @@
         svc_buy: "نشتري الذهب بالحGram (شيكل)",
         contact_title: "تواصل",
         contact_store: "مجوهرات يارا – طمرة",
+        contact_manager: "بإدارة احمد جمال ذياب (وعري)",
         contact_whatsapp: "راسلنا واتساب",
-        contact_address: "طمرة، إسرائيل (شاهد على الخريطة)",
+        contact_address: "طمرة، إسرائيل",
+        contact_tiktok: "تيك توك",
+        map_title: "الموقع",
+        map_address: "طمرة، ابن زيدون",
         foot_note: "أسعار الذهب بالشيكل للغرام وقد تشمل أجرة الصياغة إلا إذا ذُكر غير ذلك."
       },
       he: {
@@ -196,17 +242,20 @@
         hero_sub: "זהב משובח (14K ו‑21K), כסף, יהלומים ושעונים יוקרתיים בטמרה – משרתים את חיפה והגליל.",
         cta_whatsapp: "צ'אט ב‑WhatsApp",
         cta_map: "נווטו אלינו",
+        cta_tiktok: "טיקטוק",
         badge_gold: "זהב 14K · 21K",
         badge_silver: "כסף סטרלינג",
         badge_diamond: "יהלומים",
         badge_watches: "שעונים",
         badge_gifts: "מתנות ושוקולדים",
         about_title: "אודות",
-        about_text: "חנות תכשיטים משפחתית בטמרה. מתמחים בזהב 14K ו‑21K (אין 18K), כסף איכותי, יהלומים, שעוני יוקרה ומתנות מעוצבות. מכינים גם מארזי מתנה בהתאמה אישית.",
+        about_p1: "💎 תכשיטי ירא – בלב טמרה",
+        about_p2: "לא רק חנות זהב! אצלנו תמצאו תכשיטי זהב 14K ו-21K, וגם מטילי ואונקיות 24K להשקעה.",
+        about_p3: "בנוסף – כסף, יהלומים, שעונים מקוריים, מתנות יוקרתיות, שוקולדים ובשמים עם שירות אריזה מיוחד לכל אירוע: חתונה, יום הולדת או הפתעה אישית. אנחנו משרתים לקוחות מכל טמרה, חיפה והגליל ומעניקים חווית קנייה מהנה ושירות אישי ברמה הגבוהה ביותר.",
         hours_title: "שעות פתיחה",
-        hours_week: "א'–ה': 10:00–20:00",
-        hours_fri: "ו': 10:00–16:00",
-        hours_sat: "שבת: סגור",
+        hours_week: "א'–ה': 12:00–20:00",
+        hours_fri: "ו': 15:00–20:00",
+        hours_sat: "שבת: 12:00–20:00",
         collections_title: "הקולקציות שלנו",
         col_gold: "תכשיטי זהב (14K ו‑21K)",
         col_gold_txt: "שרשראות, צמידים, טבעות ועיצובים לפי הזמנה.",
@@ -214,6 +263,8 @@
         col_silver_txt: "כסף סטרלינג, טבעות ותליוני יהלומים.",
         col_watches: "שעונים",
         col_watches_txt: "שעוני יוקרה ואופנה עם שירות התאמת מידה.",
+        col_fragrance: "בשמים",
+        col_fragrance_txt: "בשמים יוקרתיים ומארזים מוכנים למתנה.",
         services_title: "שירותים",
         svc_resize: "קיצור/הארכת רצועות והחלפת סוללה",
         svc_clean: "ניקוי והברקת תכשיטים",
@@ -221,8 +272,12 @@
         svc_buy: "רכישת זהב לפי גרם (₪)",
         contact_title: "יצירת קשר",
         contact_store: "תכשיטי יארא – טמרה",
+        contact_manager: "בניהול אחמד גמאל דיאב (וערי)",
         contact_whatsapp: "כתבו לנו ב‑WhatsApp",
-        contact_address: "טמרה, ישראל (למפה)",
+        contact_address: "טמרה, ישראל",
+        contact_tiktok: "טיקטוק",
+        map_title: "מיקום",
+        map_address: "טמרה, איבן זיידון",
         foot_note: "מחירי הזהב בש\"ח לגרם ועלולים לכלול עבודת ייצור אלא אם צוין אחרת."
       }
     };
@@ -256,7 +311,7 @@
     // Init language from URL hash (?lang=ar or #ar)
     const params = new URLSearchParams(window.location.search);
     const urlLang = params.get('lang') || window.location.hash.replace('#','');
-    setLang(['en','ar','he'].includes(urlLang) ? urlLang : 'en');
+    setLang(['en','ar','he'].includes(urlLang) ? urlLang : 'ar');
 
     // Handle clicks
     document.querySelectorAll('nav.lang button').forEach(btn=>{
