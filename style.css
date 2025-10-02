@@ -70,12 +70,12 @@ header {
 }
 
 .topbar {
-  display: grid; align-items: center; grid-template-columns: 1fr auto 1fr;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
   padding-block: 10px;
-  gap: 12px;
+  gap: 8px;
 }
 
-.brand { display: inline-flex; align-items: center; gap: 10px; justify-self: center; }
+.brand { display: inline-flex; align-items: center; gap: 12px; justify-content: center; text-align: center; }
 .logo {
   inline-size: 56px; block-size: 56px; border-radius: 12px;
   background: linear-gradient(135deg, var(--gold-2), var(--gold));
@@ -86,7 +86,7 @@ header {
 .logo img { inline-size: 100%; block-size: 100%; object-fit: contain; border-radius: inherit; }
 
 /* Language nav */
-nav.lang { display: flex; gap: 6px; flex-wrap: wrap; justify-self: end; }
+nav.lang { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
 .lang button {
   border: 1px solid #e5e7eb; background: var(--card); color: var(--gold);
   padding-block: 6px; padding-inline: 10px; border-radius: 999px; cursor: pointer;
