@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yara Jewelry</title>
+  <meta name="description" content="Yara Jewelry – Gold 14K & 21K, silver, diamonds, watches, and custom gifts. Tamra, serving Haifa & the Galilee." />
+  <meta name="theme-color" content="#d4af37" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--gold:#d4af37;--dark:#1a1a1a;--light:#fff8f0;--muted:#6b7280}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;height:100%}
+    body{font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--light);color:#222}
+    a{color:var(--gold);text-decoration:none}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:50}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#f7e7b9, var(--gold));display:grid;place-items:center;color:#fff;font-weight:700}
+    nav.lang{display:flex;gap:6px;flex-wrap:wrap}
+    .lang button{border:1px solid #e5e7eb;background:#fff;color:#111;padding:6px 10px;border-radius:999px;cursor:pointer}
+    .lang button.active{background:var(--gold);color:#111;border-color:var(--gold);font-weight:700}
+    .hero{padding:42px 0 24px;display:grid;gap:10px;text-align:center}
+    .hero h1{font-size:34px;margin:0}
+    .hero p{margin:0;color:var(--muted)}
+    .cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .btn{padding:10px 14px;border-radius:12px;border:1px solid #e5e7eb;cursor:pointer}
+    .btn.primary{background:var(--gold);border-color:var(--gold)}
+    .grid{display:grid;gap:16px}
+    @media (min-width:768px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    section{padding:28px 0;border-top:1px solid #f0f0f0}
+    .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:16px;box-shadow:0 12px 30px rgba(0,0,0,.04)}
+    h2{margin:0 0 12px 0;font-size:24px}
+    ul{margin:0;padding-inline-start:18px}
+    footer{padding:24px 0;background:#111;color:#eee;margin-top:28px}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .pill{border:1px dashed #e5e7eb;padding:6px 10px;border-radius:999px}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="logo">Y</div>
+        <div>
+          <strong>Yara Jewelry</strong><br>
+          <small class="muted" data-i18n="tagline">Gold • Silver • Diamonds • Watches • Gifts</small>
+        </div>
+      </div>
+      <nav class="lang" aria-label="Language selector">
+        <button data-lang="en" class="active" aria-pressed="true">EN</button>
+        <button data-lang="ar" aria-pressed="false">العربية</button>
+        <button data-lang="he" aria-pressed="false">עברית</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 data-i18n="hero_title">✨ Yara Jewelry ✨</h1>
+      <p data-i18n="hero_sub">Fine gold (14K & 21K), silver, diamonds & luxury watches in Tamra, serving Haifa & the Galilee.</p>
+      <div class="cta">
+        <a class="btn primary" id="whatsappBtn" href="https://wa.me/972000000000" target="_blank" rel="noopener" data-i18n="cta_whatsapp">Chat on WhatsApp</a>
+        <a class="btn" href="https://instagram.com/YaraJewelry21" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn" id="mapBtn" href="https://maps.google.com/?q=Yara%20Jewelry%20Tamra" target="_blank" rel="noopener" data-i18n="cta_map">Find us on Maps</a>
+      </div>
+      <div class="row" style="justify-content:center;margin-top:6px">
+        <span class="pill" data-i18n="badge_gold">Gold 14K · 21K</span>
+        <span class="pill" data-i18n="badge_silver">Sterling Silver</span>
+        <span class="pill" data-i18n="badge_diamond">Diamonds</span>
+        <span class="pill" data-i18n="badge_watches">Watches</span>
+        <span class="pill" data-i18n="badge_gifts">Gifts & Chocolates</span>
+      </div>
+    </section>
+
+    <section id="about" class="grid cols-2">
+      <div class="card">
+        <h2 data-i18n="about_title">About Us</h2>
+        <p data-i18n="about_text">We are a family-run jewelry store in Tamra. We specialize in 14K & 21K gold (no 18K), fine silver, diamonds, luxury watches, and curated gifts. We also create custom gift arrangements to your taste.</p>
+      </div>
+      <div class="card">
+        <h2 data-i18n="hours_title">Hours</h2>
+        <ul>
+          <li data-i18n="hours_week">Sun–Thu: 10:00–20:00</li>
+          <li data-i18n="hours_fri">Fri: 10:00–16:00</li>
+          <li data-i18n="hours_sat">Sat: Closed</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="collections">
+      <div class="card">
+        <h2 data-i18n="collections_title">Our Collections</h2>
+        <div class="grid cols-3" style="margin-top:10px">
+          <div class="card">
+            <strong data-i18n="col_gold">Gold Jewelry (14K & 21K)</strong>
+            <p class="muted" data-i18n="col_gold_txt">Necklaces, bracelets, rings & custom pieces.</p>
+          </div>
+          <div class="card">
+            <strong data-i18n="col_silver">Silver & Diamonds</strong>
+            <p class="muted" data-i18n="col_silver_txt">Sterling silver, diamond rings & pendants.</p>
+          </div>
+          <div class="card">
+            <strong data-i18n="col_watches">Watches</strong>
+            <p class="muted" data-i18n="col_watches_txt">Luxury & fashion watches with sizing service.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="grid cols-2">
+      <div class="card">
+        <h2 data-i18n="services_title">Services</h2>
+        <ul>
+          <li data-i18n="svc_resize">Watch resizing & battery replacement</li>
+          <li data-i18n="svc_clean">Jewelry cleaning & polishing</li>
+          <li data-i18n="svc_gift">Custom gift wrapping & arrangements</li>
+          <li data-i18n="svc_buy">We buy gold by gram (ILS)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2 data-i18n="contact_title">Contact</h2>
+        <p><strong data-i18n="contact_store">Yara Jewelry – Tamra</strong></p>
+        <p>📞 <a href="tel:+972000000000" id="phoneLink">+972-00-000-0000</a></p>
+        <p>📲 <a href="https://wa.me/972000000000" id="waLink" target="_blank" rel="noopener" data-i18n="contact_whatsapp">WhatsApp us</a></p>
+        <p>📷 <a href="https://instagram.com/YaraJewelry21" target="_blank" rel="noopener">@YaraJewelry21</a></p>
+        <p>📍 <a href="https://maps.google.com/?q=Yara%20Jewelry%20Tamra" id="addrLink" target="_blank" rel="noopener" data-i18n="contact_address">Tamra, Israel (see map)</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="text-align:center">
+      <div style="margin-bottom:6px" data-i18n="foot_note">Prices for gold are in ILS per gram and may include workmanship unless noted.</div>
+      <small>© <span id="year"></span> Yara Jewelry</small>
+    </div>
+  </footer>
+
+  <script>
+    // ====== Replace with your real phone/WhatsApp ======
+    const PHONE_E164 = "+972000000000"; // e.g. +972525555251
+    document.getElementById('phoneLink').href = `tel:${PHONE_E164}`;
+    document.getElementById('waLink').href = `https://wa.me/${PHONE_E164.replace('+','')}`;
+    document.getElementById('whatsappBtn').href = `https://wa.me/${PHONE_E164.replace('+','')}`;
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ====== i18n content ======
+    const I18N = {
+      en: {
+        tagline: "Gold • Silver • Diamonds • Watches • Gifts",
+        hero_title: "✨ Yara Jewelry ✨",
+        hero_sub: "Fine gold (14K & 21K), silver, diamonds & luxury watches in Tamra, serving Haifa & the Galilee.",
+        cta_whatsapp: "Chat on WhatsApp",
+        cta_map: "Find us on Maps",
+        badge_gold: "Gold 14K · 21K",
+        badge_silver: "Sterling Silver",
+        badge_diamond: "Diamonds",
+        badge_watches: "Watches",
+        badge_gifts: "Gifts & Chocolates",
+        about_title: "About Us",
+        about_text: "We are a family-run jewelry store in Tamra. We specialize in 14K & 21K gold (no 18K), fine silver, diamonds, luxury watches, and curated gifts. We also create custom gift arrangements to your taste.",
+        hours_title: "Hours",
+        hours_week: "Sun–Thu: 10:00–20:00",
+        hours_fri: "Fri: 10:00–16:00",
+        hours_sat: "Sat: Closed",
+        collections_title: "Our Collections",
+        col_gold: "Gold Jewelry (14K & 21K)",
+        col_gold_txt: "Necklaces, bracelets, rings & custom pieces.",
+        col_silver: "Silver & Diamonds",
+        col_silver_txt: "Sterling silver, diamond rings & pendants.",
+        col_watches: "Watches",
+        col_watches_txt: "Luxury & fashion watches with sizing service.",
+        services_title: "Services",
+        svc_resize: "Watch resizing & battery replacement",
+        svc_clean: "Jewelry cleaning & polishing",
+        svc_gift: "Custom gift wrapping & arrangements",
+        svc_buy: "We buy gold by gram (ILS)",
+        contact_title: "Contact",
+        contact_store: "Yara Jewelry – Tamra",
+        contact_whatsapp: "WhatsApp us",
+        contact_address: "Tamra, Israel (see map)",
+        foot_note: "Prices for gold are in ILS per gram and may include workmanship unless noted."
+      },
+      ar: {
+        tagline: "ذهب • فضة • ألماس • ساعات • هدايا",
+        hero_title: "✨ مجوهرات يارا ✨",
+        hero_sub: "ذهب فاخر (عيار 14 و21)، فضة، ألماس وساعات فاخرة في طمرة – نخدم حيفا والجليل.",
+        cta_whatsapp: "تواصل عبر واتساب",
+        cta_map: "موقعنا على الخارطة",
+        badge_gold: "ذهب عيار 14 · 21",
+        badge_silver: "فضة استرليني",
+        badge_diamond: "ألماس",
+        badge_watches: "ساعات",
+        badge_gifts: "هدايا وشوكولاتة",
+        about_title: "من نحن",
+        about_text: "نحن متجر عائلي للمجوهرات في طمرة. نختص بذهب عيار 14 و21 (لا يوجد 18)، فضة فاخرة، ألماس، ساعات فاخرة وهدايا منسقة. ونجهّز ترتيبات هدايا حسب ذوقكم.",
+        hours_title: "ساعات العمل",
+        hours_week: "الأحد–الخميس: 10:00–20:00",
+        hours_fri: "الجمعة: 10:00–16:00",
+        hours_sat: "السبت: مغلق",
+        collections_title: "مجموعاتنا",
+        col_gold: "مجوهرات ذهب (14 و21)",
+        col_gold_txt: "سلاسل، أساور، خواتم وتصاميم خاصة.",
+        col_silver: "فضة وألماس",
+        col_silver_txt: "فضة استرليني، خواتم وأحجار ألماس.",
+        col_watches: "ساعات",
+        col_watches_txt: "ساعات فاخرة وعصرية مع خدمة تعديل المقاس.",
+        services_title: "خدماتنا",
+        svc_resize: "تقصير/تطويل أساور الساعات وتبديل بطارية",
+        svc_clean: "تنظيف وتلميع المجوهرات",
+        svc_gift: "تغليف وترتيب هدايا حسب الطلب",
+        svc_buy: "نشتري الذهب بالحGram (شيكل)",
+        contact_title: "تواصل",
+        contact_store: "مجوهرات يارا – طمرة",
+        contact_whatsapp: "راسلنا واتساب",
+        contact_address: "طمرة، إسرائيل (شاهد على الخريطة)",
+        foot_note: "أسعار الذهب بالشيكل للغرام وقد تشمل أجرة الصياغة إلا إذا ذُكر غير ذلك."
+      },
+      he: {
+        tagline: "זהב • כסף • יהלומים • שעונים • מתנות",
+        hero_title: "✨ תכשיטי יארא ✨",
+        hero_sub: "זהב משובח (14K ו‑21K), כסף, יהלומים ושעונים יוקרתיים בטמרה – משרתים את חיפה והגליל.",
+        cta_whatsapp: "צ'אט ב‑WhatsApp",
+        cta_map: "נווטו אלינו",
+        badge_gold: "זהב 14K · 21K",
+        badge_silver: "כסף סטרלינג",
+        badge_diamond: "יהלומים",
+        badge_watches: "שעונים",
+        badge_gifts: "מתנות ושוקולדים",
+        about_title: "אודות",
+        about_text: "חנות תכשיטים משפחתית בטמרה. מתמחים בזהב 14K ו‑21K (אין 18K), כסף איכותי, יהלומים, שעוני יוקרה ומתנות מעוצבות. מכינים גם מארזי מתנה בהתאמה אישית.",
+        hours_title: "שעות פתיחה",
+        hours_week: "א'–ה': 10:00–20:00",
+        hours_fri: "ו': 10:00–16:00",
+        hours_sat: "שבת: סגור",
+        collections_title: "הקולקציות שלנו",
+        col_gold: "תכשיטי זהב (14K ו‑21K)",
+        col_gold_txt: "שרשראות, צמידים, טבעות ועיצובים לפי הזמנה.",
+        col_silver: "כסף ויהלומים",
+        col_silver_txt: "כסף סטרלינג, טבעות ותליוני יהלומים.",
+        col_watches: "שעונים",
+        col_watches_txt: "שעוני יוקרה ואופנה עם שירות התאמת מידה.",
+        services_title: "שירותים",
+        svc_resize: "קיצור/הארכת רצועות והחלפת סוללה",
+        svc_clean: "ניקוי והברקת תכשיטים",
+        svc_gift: "אריזת מתנות וסידור בהתאמה אישית",
+        svc_buy: "רכישת זהב לפי גרם (₪)",
+        contact_title: "יצירת קשר",
+        contact_store: "תכשיטי יארא – טמרה",
+        contact_whatsapp: "כתבו לנו ב‑WhatsApp",
+        contact_address: "טמרה, ישראל (למפה)",
+        foot_note: "מחירי הזהב בש""ח לגרם ועלולים לכלול עבודת ייצור אלא אם צוין אחרת."
+      }
+    };
+
+    function setLang(lang){
+      const dict = I18N[lang] || I18N.en;
+      // Update direction & lang attributes
+      const rtl = (lang === 'ar' || lang === 'he');
+      document.documentElement.lang = lang;
+      document.documentElement.dir = (lang === 'ar' || lang === 'he') ? 'rtl' : 'ltr';
+
+      // Swap alignment when RTL
+      document.body.style.textAlign = rtl ? 'right' : 'left';
+      // Center hero text regardless
+      document.querySelectorAll('.hero').forEach(el=>el.style.textAlign='center');
+
+      // Replace texts
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const key = el.getAttribute('data-i18n');
+        if(dict[key]) el.textContent = dict[key];
+      });
+
+      // Update active state on buttons
+      document.querySelectorAll('nav.lang button').forEach(btn=>{
+        const isActive = btn.getAttribute('data-lang') === lang;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+    }
+
+    // Init language from URL hash (?lang=ar or #ar)
+    const params = new URLSearchParams(window.location.search);
+    const urlLang = params.get('lang') || window.location.hash.replace('#','');
+    setLang(['en','ar','he'].includes(urlLang) ? urlLang : 'en');
+
+    // Handle clicks
+    document.querySelectorAll('nav.lang button').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const lng = btn.getAttribute('data-lang');
+        history.replaceState(null,'',`?lang=${lng}`);
+        setLang(lng);
+      });
+    });
+  </script>
+</body>
+</html>
