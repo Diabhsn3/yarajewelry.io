@@ -100,7 +100,7 @@ nav.lang { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
 /* Hero */
 .hero { padding-block: 24px 24px; display: grid; gap: 10px; text-align: center; }
 .hero h1 { letter-spacing: 0.3px; }
-.hero h1 { font-size: clamp(26px, 4vw, 36px); margin: 0; }
+.hero h1 { font-size: clamp(32px, 5vw, 48px); margin: 0; font-weight: 700; }
 .hero p { margin: 0; color: var(--muted); }
 .hero-subtitle {
   font-size: clamp(16px, 2.5vw, 20px);
@@ -140,7 +140,10 @@ nav.lang { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
 .muted { color: var(--muted); }
 
 /* Sections */
-section { padding-block: 28px; border-block-start: 1px solid var(--line); }
+section { padding-block: 40px; border-block-start: 1px solid var(--line); }
+
+/* Services section - lighter background */
+#services { background: color-mix(in oklab, var(--bg) 95%, var(--gold)); }
 
 /* Grid helpers */
 .grid { display: grid; gap: 16px; }
@@ -173,6 +176,8 @@ ul li { padding-block: 3px; }
 
 /* Footer */
 footer { padding-block: 24px; background: #111; color: #eee; margin-block-start: 28px; }
+footer .container { display: flex; flex-direction: column; align-items: center; text-align: center; }
+footer p { margin: 0.5rem 0; line-height: 1.4; }
 footer .container { text-align: center; }
 
 /* Map embed */
