@@ -7,8 +7,12 @@
   <meta name="description" content="Yara Jewelry – Premier gold store in Tamra, Haifa & Galilee. Gold 14K & 21K, silver, diamonds, watches, and luxury gifts. The leading jewelry destination in the region." />
   <meta name="theme-color" content="#c9a227" />
   
-  <!-- Canonical -->
-  <link rel="canonical" href="https://www.minikinyon-yara.com/">
+  <!-- Dynamic Canonical & Hreflang (will be updated by JavaScript) -->
+  <link rel="canonical" id="canonical-link" href="https://www.minikinyon-yara.com/">
+  <link rel="alternate" id="hreflang-ar" href="https://www.minikinyon-yara.com/?lang=ar" hreflang="ar">
+  <link rel="alternate" id="hreflang-he" href="https://www.minikinyon-yara.com/?lang=he" hreflang="he">
+  <link rel="alternate" id="hreflang-en" href="https://www.minikinyon-yara.com/?lang=en" hreflang="en">
+  <link rel="alternate" id="hreflang-default" href="https://www.minikinyon-yara.com/" hreflang="x-default">
 
   <!-- Basic SEO -->
   <title id="seo-title">Yara Jewelry | Gold, Diamonds, Silver & Watches – Tamra, Haifa & Galilee</title>
@@ -17,17 +21,12 @@
   <meta name="author" content="Yara Jewelry">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
-  <meta name="language" content="en">
+  <meta name="language" id="content-language" content="ar">
+  <meta http-equiv="Content-Language" id="http-content-language" content="ar">
   <meta name="geo.region" content="IL-HA">
   <meta name="geo.placename" content="Tamra, Haifa District, Israel">
   <meta name="geo.position" content="32.84851;35.20426">
   <meta name="ICBM" content="32.84851, 35.20426">
-
-  <!-- Hreflang (3 languages - clean URLs) -->
-  <link rel="alternate" href="https://www.minikinyon-yara.com/" hreflang="en">
-  <link rel="alternate" href="https://www.minikinyon-yara.com/" hreflang="ar">
-  <link rel="alternate" href="https://www.minikinyon-yara.com/" hreflang="he">
-  <link rel="alternate" href="https://www.minikinyon-yara.com/" hreflang="x-default">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -500,6 +499,25 @@
       const rtl = (lang === 'ar' || lang === 'he');
       document.documentElement.lang = lang;
       document.documentElement.dir = (lang === 'ar' || lang === 'he') ? 'rtl' : 'ltr';
+
+      // Update canonical and hreflang tags dynamically
+      const baseUrl = 'https://www.minikinyon-yara.com';
+      const currentUrl = lang === 'ar' ? `${baseUrl}/?lang=ar` : 
+                          lang === 'he' ? `${baseUrl}/?lang=he` : 
+                          lang === 'en' ? `${baseUrl}/?lang=en` : baseUrl;
+      
+      // Set canonical to current language URL
+      document.getElementById('canonical-link').href = currentUrl;
+      
+      // Update hreflang tags
+      document.getElementById('hreflang-ar').href = `${baseUrl}/?lang=ar`;
+      document.getElementById('hreflang-he').href = `${baseUrl}/?lang=he`;
+      document.getElementById('hreflang-en').href = `${baseUrl}/?lang=en`;
+      document.getElementById('hreflang-default').href = baseUrl;
+      
+      // Update content language meta tags
+      document.getElementById('content-language').setAttribute('content', lang);
+      document.getElementById('http-content-language').setAttribute('content', lang);
 
       // Swap alignment when RTL
       document.body.style.textAlign = rtl ? 'right' : 'left';
