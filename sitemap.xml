@@ -2,21 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.minikinyon-yara.com/?lang=en</loc>
-    <lastmod>2025-10-02</lastmod>
+    <loc>https://www.minikinyon-yara.com/</loc>
+    <lastmod>2025-01-27</lastmod>
     <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://www.minikinyon-yara.com/?lang=ar</loc>
-    <lastmod>2025-10-02</lastmod>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://www.minikinyon-yara.com/?lang=he</loc>
-    <lastmod>2025-10-02</lastmod>
-    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
 </urlset>
