@@ -1,3 +1,10 @@
+# Prevent redirects on language URLs
+RewriteEngine On
+
+# Ensure language URLs are not redirected
+RewriteCond %{QUERY_STRING} ^lang=(ar|he|en)$
+RewriteRule ^$ - [L]
+
 # Force proper MIME type for XML files
 <Files "sitemap.xml">
     Header set Content-Type "application/xml; charset=UTF-8"

@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 
+# Test file for URL verification
+Allow: /test-urls.html
+
 Sitemap: https://www.minikinyon-yara.com/sitemap.xml
 Sitemap: https://www.minikinyon-yara.com/sitemap.php

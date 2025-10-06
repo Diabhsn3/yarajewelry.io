@@ -578,7 +578,11 @@
     document.querySelectorAll('nav.lang button').forEach(btn=>{
       btn.addEventListener('click', ()=>{
         const lng = btn.getAttribute('data-lang');
-        history.replaceState(null,'',`?lang=${lng}`);
+        // Use pushState instead of replaceState to ensure proper URL handling
+        const newUrl = lng === 'ar' ? '?lang=ar' : 
+                      lng === 'he' ? '?lang=he' : 
+                      lng === 'en' ? '?lang=en' : '';
+        history.pushState(null, '', newUrl);
         setLang(lng);
       });
     });

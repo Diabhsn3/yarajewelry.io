@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Test - Yara Jewelry</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-item { margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+        .success { background: #d4edda; border-color: #c3e6cb; }
+        .error { background: #f8d7da; border-color: #f5c6cb; }
+        .loading { background: #fff3cd; border-color: #ffeaa7; }
+        button { background: #c9a227; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #b8941f; }
+    </style>
+</head>
+<body>
+    <h1>Yara Jewelry - URL Test</h1>
+    <p>Testing all language versions to ensure they return 200 OK status:</p>
+    
+    <div class="test-item loading" id="test-ar">
+        <strong>Arabic (?lang=ar):</strong> <span id="status-ar">Testing...</span>
+        <button onclick="testUrl('?lang=ar', 'ar')">Test Now</button>
+    </div>
+    
+    <div class="test-item loading" id="test-he">
+        <strong>Hebrew (?lang=he):</strong> <span id="status-he">Testing...</span>
+        <button onclick="testUrl('?lang=he', 'he')">Test Now</button>
+    </div>
+    
+    <div class="test-item loading" id="test-en">
+        <strong>English (?lang=en):</strong> <span id="status-en">Testing...</span>
+        <button onclick="testUrl('?lang=en', 'en')">Test Now</button>
+    </div>
+    
+    <div class="test-item loading" id="test-default">
+        <strong>Default (/):</strong> <span id="status-default">Testing...</span>
+        <button onclick="testUrl('', 'default')">Test Now</button>
+    </div>
+    
+    <script>
+        async function testUrl(url, lang) {
+            const statusElement = document.getElementById(`status-${lang}`);
+            const containerElement = document.getElementById(`test-${lang}`);
+            
+            try {
+                statusElement.textContent = 'Testing...';
+                containerElement.className = 'test-item loading';
+                
+                const response = await fetch(url);
+                const status = response.status;
+                const redirected = response.redirected;
+                
+                if (status === 200 && !redirected) {
+                    statusElement.textContent = `✅ SUCCESS - Status: ${status}, No redirect`;
+                    containerElement.className = 'test-item success';
+                } else if (redirected) {
+                    statusElement.textContent = `❌ REDIRECT DETECTED - Status: ${status}`;
+                    containerElement.className = 'test-item error';
+                } else {
+                    statusElement.textContent = `⚠️ Status: ${status}`;
+                    containerElement.className = 'test-item error';
+                }
+            } catch (error) {
+                statusElement.textContent = `❌ ERROR: ${error.message}`;
+                containerElement.className = 'test-item error';
+            }
+        }
+        
+        // Auto-test all URLs on page load
+        window.onload = function() {
+            testUrl('?lang=ar', 'ar');
+            testUrl('?lang=he', 'he');
+            testUrl('?lang=en', 'en');
+            testUrl('', 'default');
+        };
+    </script>
+</body>
+</html>
