@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.minikinyon-yara.com/sitemap.xml
+Sitemap: https://www.minikinyon-yara.com/sitemap.php
