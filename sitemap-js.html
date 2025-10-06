@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Sitemap - Yara Jewelry</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        pre { background: #f4f4f4; padding: 20px; border-radius: 8px; overflow-x: auto; }
+        .loading { color: #666; }
+    </style>
+</head>
+<body>
+    <h1>XML Sitemap - Yara Jewelry</h1>
+    <div id="sitemap-content" class="loading">Loading sitemap...</div>
+    
+    <script>
+        // Fetch and display the XML sitemap
+        fetch('sitemap.xml')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sitemap-content').innerHTML = '<pre>' + 
+                    data.replace(/</g, '&lt;').replace(/>/g, '&gt;') + 
+                    '</pre>';
+            })
+            .catch(error => {
+                document.getElementById('sitemap-content').innerHTML = 
+                    '<p style="color: red;">Error loading sitemap: ' + error.message + '</p>';
+            });
+    </script>
+</body>
+</html>
