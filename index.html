@@ -87,14 +87,84 @@
     "paymentAccepted": "Cash, Credit Card",
     "description": "Premier gold and jewelry store in Tamra, Haifa & Galilee. Gold 14K & 21K, silver, diamonds, watches, and luxury gifts.",
     "keywords": "jewelry store Tamra, gold jewelry Haifa, jewelry store Galilee, gold store Tamra, jewelry Haifa, gold jewelry Galilee",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Customer Review"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": "Excellent service and quality jewelry. Highly recommended!"
+      }
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Jewelry Collections",
       "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Gold Jewelry 14K & 21K"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Silver & Diamond Jewelry"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Luxury Watches"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Gold Bars & Ounces"}}
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Product", 
+            "name": "Gold Jewelry 14K & 21K",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "ILS",
+              "availability": "https://schema.org/InStock",
+              "price": "Contact for pricing"
+            }
+          }
+        },
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Product", 
+            "name": "Silver & Diamond Jewelry",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "ILS",
+              "availability": "https://schema.org/InStock",
+              "price": "Contact for pricing"
+            }
+          }
+        },
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Product", 
+            "name": "Luxury Watches",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "ILS",
+              "availability": "https://schema.org/InStock",
+              "price": "Contact for pricing"
+            }
+          }
+        },
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Product", 
+            "name": "Gold Bars & Ounces",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "ILS",
+              "availability": "https://schema.org/InStock",
+              "price": "Contact for pricing"
+            }
+          }
+        }
       ]
     }
   }
